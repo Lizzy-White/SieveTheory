@@ -26,9 +26,17 @@ void print_as_list(primality_t* nums, int limit) {
 			"\n2");
 	
 	for (i = 3; i <= limit; i++) {
-		if (nums[i] == COMPOSITE)
+		if (nums[i] == PRIME)
 			printf(", %d", i);
 	}
-printf("Value of 3 is %d", nums[3]);
+
 	printf("\n");
+}
+
+void print_as_grid() {
+
+}
+
+void uninit_sieve(primality_t* nums) {
+	free(nums);
 }
