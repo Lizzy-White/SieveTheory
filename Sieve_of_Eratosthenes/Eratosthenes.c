@@ -68,7 +68,7 @@ void print_as_grid(sieve_t* sieve, int limit) {
 			printf(N "%4d", i);
 		col_count++;
 	}
-	usleep(100000);
+	usleep(10000);
 
 }
 

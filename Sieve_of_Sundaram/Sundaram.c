@@ -27,7 +27,6 @@ void sundaram_find_primes(sieve_t *sieve, int limit) {
 			sieve->primes = realloc(sieve->primes, sizeof(int)*(++sieve->num_primes));
 			sieve->primes[sieve->num_primes - 1] = 2*k+1;
 			print_as_grid(sieve, limit);
-//			print_as_list(sieve, limit);
 		}
 	}
 
