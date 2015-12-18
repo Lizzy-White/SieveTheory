@@ -10,11 +10,7 @@ For each sieve, navigate to the appropriate folder:
 
 cd Sieve_of_Eratosthenes
 
-Type
-
-make
-
-to compile the program.  Next, run the program and give it some integer n as the limit (for example, running the sieve of Eratosthenes with n=100):
+Type 'make' (no quotes) to compile the program.  Next, run the program and give it some integer n as the limit (for example, running the sieve of Eratosthenes with n=100):
 
 ./eratosthenes 100
 
@@ -26,6 +22,7 @@ Note: This looks better if you use the original black terminal screen, rather th
 For large inputs of n, the animation could lag a bit.  It also may be too slow.  I would recommend for any n > 100 that these lines of code are altered:
 
 Sieve_of_Eratosthenes/Eratosthenes.c: 71 -> usleep(5000);
+
 Sieve_of_Sundaram/Sundaram.c: 66 -> usleep(5000);
 
 At the end of the animation, a list is printed of all the primes less than the given limit.  
